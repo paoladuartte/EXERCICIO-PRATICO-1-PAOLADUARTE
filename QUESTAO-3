@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang = "pt-BR"
+<head>
+	<meta charset = "UTF-8">
+	<title>Tabela e Formulário em HTML</title>
+</head>
+<body>
+	<h2>Lista de Produtos</h2>
+	<table border = "1">
+		<tr>
+			<th>Produto</th>
+			<th>Preço</th>
+			<th>Quantidade em Estoque</th>
+		</tr>
+		<tr>
+			<td>Notebook</td>
+			<td>R$ 3.5000,00</td>
+			<td>12</td>
+		</tr>
+		<tr>
+			<td>Mouse Gamer</td>
+			<td>R$ 120,00</td>
+			<td>30</td>
+		</tr>
+		<tr>
+			<td>Teclado Mecânico</td>
+			<td>R$ 280,00</td>
+			<td>20</td>
+		</tr>
+	</table>
+
+	<h3>Formulário de Pedido</h3>
+	<form action = "pedidos.html" method = "post">
+		<label for = "name"> Nome do Cliente: </label> <br>
+		<input type = "text" id="name" name="name" placeholder="Digite seu nome completo" required><br><br>
+		<select id="produto">Produto Desejado:</label><br>
+			<option value="Notebook">Notebook</option>
+			<option value="Mouse Gamer">Mouse Gamer</option>
+			<option value="Teclado Mecânico">Teclado Mecânico</option>
+		</select><br><br>
+		<label for = "quantidade"> Quantidade: </label> <br>
+		<input type = "number" id="quantidade" name="quantidade" min="1" required><br><br>
+		
+		<input type = "submit" value="Enviar Pedido">
+	</form>
+</body>
+</html>
